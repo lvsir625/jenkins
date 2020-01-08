@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: jenkins-slave-pvc-claim  #指定pvc的名字
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: storage-nfs    #指定存储类
+  resources:
+    requests:
+      storage: 70Gi         #根据情况设置存储大小
