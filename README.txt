@@ -1,1 +1,2 @@
 说明，部署jenkins使用到了nfs的存储类，可根据自己的需求加以修改,关于jenkins的cloud配置略
+关于要缓存构建项目时拉取的maven包及一些依赖的库，可以使用pvc，可参考jenkins-slave-pvc.yaml文件
